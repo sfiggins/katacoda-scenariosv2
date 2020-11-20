@@ -7,7 +7,7 @@
     "assets": {
       "host01": [
         {
-          "file": "front-end.yaml", 
+          "file": "frontend.yaml", 
           "target": "/root/"}
         ]
     },
