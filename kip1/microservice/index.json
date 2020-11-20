@@ -4,6 +4,14 @@
   "difficulty": "Beginner",
   "time": "30",
   "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "front-end.yaml", 
+          "target": "/root/"}
+        ]
+    },
+
     "steps": [
       {
         "title": "Step 1",
