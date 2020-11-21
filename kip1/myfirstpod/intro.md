@@ -1,0 +1,1 @@
+Welcome to your first workshop! We have just learned about Pods and Namespaces so we are going to put test what we have just learned. Don't worry, we will start very simple and build up from here as we move along throughout the day.
