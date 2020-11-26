@@ -35,7 +35,7 @@
   },
   "environment": {
     "uilayout": ""editor-terminal",
-  "uieditorpath": "/root/manifests
+    "uieditorpath": "/root/manifests"
   },
   "backend": {
     "imageid": "kubernetes-cluster-running"
