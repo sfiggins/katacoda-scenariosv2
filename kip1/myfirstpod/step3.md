@@ -1,7 +1,11 @@
-Hopefully at this point your pod manifest is ready to be sent to the kube-api. Don't worry if you couldn't figure out just yet, if not just give a shout to your instrucutor for furhter assistance. But if you are feeling confident you can run:
+Hopefully at this point your pod manifest is ready to be sent to the kube-api. Don't worry if you couldn't figure out just yet, if not just give a shout to your instructor for further assistance. But if you are feeling confident you can run:
 
-`kubectl apply -f pod.yaml`{{execute}}
+`kubectl apply -f myfirstpod.yaml`{{execute}}
 
-The command above will apply the contents of your maninest file (-f) and send to the kube-api. You can now run the command below to wathc our Pod come into life:
+The command above will apply the contents of your manifest file (-f) and send to the kube-api. You can now run the command below to watch our Pod come into life:
 
 `watch kubectl get pod`{{execute}}
+
+If the STATUS is displaying "Running" congrats! Your first ever Pod is up and running. If there some other weird STATUS we need figure it out what happen. The describe command can show us more information about what is going on:
+
+`kubectl describe pod hello-pod`{{execute}}
