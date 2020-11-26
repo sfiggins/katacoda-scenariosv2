@@ -14,6 +14,11 @@
       "course_id": "myfirstpod",
       "title": "Pod Up",
       "description": "Learn about Pods and Namespaces"
+    },
+    {
+      "course_id": "labelit",
+      "title": "Label it",
+      "description": "Practing labels and services"
     }
   ]
 }
