@@ -8,16 +8,18 @@ I am really sorry but I forgot to say we were supposed to create our first pod i
 
 If the namespace is not listed there we will need to create it first. I will make it easy for you this time:
 
-`cat <<EOF > dev-ns.yaml
+`cat <<EOF > /root/manifests/dev-ns.yaml
 apiVersion: v1
 kind: Namespace
 metadata:
   name: development
 EOF`{{execute}}
 
-Now we can use the "delete" option to remove the pod in the default namespace:
+Now that you know about the "apply" option. Try running yourself to apply the namespace manifest to Kubernetes.
 
-`kubectl delete -f /root/manifest/myfirstpod.yaml`{{execute}}
+Once that is done we can use the "delete" option to remove the pod in the default namespace:
+
+`kubectl delete -f /root/manifests/myfirstpod.yaml`{{execute}}
 
 Now you can edit the file to add the "namespace" field which should go under metadata. Once done apply the manifest one again.
 
