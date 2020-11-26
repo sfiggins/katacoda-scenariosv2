@@ -4,6 +4,13 @@
   "difficulty": "Beginner",
   "time": "10",
   "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "*",
+          "target": "/root/manifests"}
+      ]
+  },
     "steps": [
       {
         "title": "Step 1",
