@@ -16,6 +16,11 @@
       "description": "Learn about Pods and Namespaces"
     },
     {
+      "course_id": "kube-scheduler",
+      "title": "kube-scheduler",
+      "description": "Troubleshooting scheduling issues"
+    },
+    {
       "course_id": "labelit",
       "title": "Label it",
       "description": "Practing labels and services"
