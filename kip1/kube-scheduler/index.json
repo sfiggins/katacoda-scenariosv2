@@ -4,6 +4,14 @@
   "difficulty": "Beginner",
   "time": "20",
   "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "*",
+          "target": "/root/manifests/"}
+        ]
+    },
+
     "steps": [
       {
         "title": "Step 1",
@@ -25,14 +33,6 @@
     "intro": {
       "text": "intro.md",
       "background": "setup.sh"
-    },
-    "assets": {
-      "host1": [
-        {
-          "file": "*",
-          "target": "/root/manifests/"
-        }
-      ]
     },
     "finish": {
       "text": "finish.md"
