@@ -1,4 +1,4 @@
-You probably noticed that the "test-pod" on the "staging" namespace seems to be stuck on "Pending". We can use the describe command to find what is going on.
+The "Pending" status means that the Pod has not been scheduled to run in any of the worker nodes yet. We can use the describe command to find what is going on.
 `kubectl -n staging describe pod test-pod`{{execute}}
 
 Checkout the Events section. What can you see there?

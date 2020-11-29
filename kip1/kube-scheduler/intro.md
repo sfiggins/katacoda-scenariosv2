@@ -1,0 +1,1 @@
+Welcome to your second workshop. This time we will put our troubleshooting hats on to figure what is wrong in our cluster.
