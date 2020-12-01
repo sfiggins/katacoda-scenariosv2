@@ -1,7 +1,14 @@
-Most API object that we create requires "apiVersion", "kind", "metadata" and "spec". We don't need to worry about "status" as that is mostly used by kube-api. If you need to know more info about any of those fields simply add them to the explain command, for example if you want to know more about "kind":
+You should try to do a "describe" of the troublesome Pod to see if you can more information as to why the Pod is crashing.
 
-`kubectl explain pod.kind`{{execute}}
+Found anything? Probably nothing useful. We know that this Pod called "front-end" is supposed to connect with the Pod called "back-end".
 
-You can keep drilling down by just appending the extra field to your explain command, however in example above "kind" is the last field you can query since "kind" only accept a string as argument nothing else. Hint, in this case is "Pod" (with a Capital "P").
+Maybe we can use the "logs" option to see if we get more clues as what might have happened:
 
-As you can see "kubectl explain" is very powerful, you pretty much have the whole API documentation at your disposal. That's why it is a good idea to get familiar with, if you need more info about a specific field there usually a link you can click to find out more about.
+`kubectl logs front-end`{{execute}}
+
+From those error messages it seems this Pod is trying to reach out to the URL "http://back-end-svc:8080" but Kubernetes is saying there are no hosts under that name.
+
+>>Q1: Do you remember what type of Service is used for internal application to reach each other? <<
+[ ] LoadBalancer
+[*] ClusterIP
+[ ] NodePort
