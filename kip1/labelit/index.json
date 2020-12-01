@@ -5,11 +5,11 @@
   "time": "20",
   "details": {
     "assets": {
-
-        
+      "host01": [
+        {
           "file": "*",
-          "target": "/root/manifests/"
-
+          "target": "/root/manifests/"}
+        ]
     },
 
     "steps": [
@@ -39,7 +39,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "terminal-terminal"
   },
   "backend": {
     "imageid": "kubernetes-cluster-running"
