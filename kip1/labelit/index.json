@@ -15,6 +15,7 @@
     "steps": [
       {
         "title": "Step 1",
+        "background": "setup.sh",
         "text": "step1.md"
       },
       {
@@ -32,7 +33,6 @@
     ],
     "intro": {
       "text": "intro.md",
-      "background": "setup.sh",
       "code": "foreground.sh"
     },
     "finish": {
