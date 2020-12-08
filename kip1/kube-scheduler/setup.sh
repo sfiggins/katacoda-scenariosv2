@@ -1,9 +1,10 @@
 #!/bin/bash
 
-until kubectl get nodes
+while [ `kubectl get nodes | grep " Ready" |  wc -l` -ne 2 ]
 do
-  sleep 2
+  sleep 1
 done
+
 
 cat <<EOF > setup.yaml
 apiVersion: v1
