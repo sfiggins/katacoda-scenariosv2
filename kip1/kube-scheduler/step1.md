@@ -1,5 +1,10 @@
-We were told there is an issue on the cluster but no further details were provided. So first let's get familiar with a our cluster. Take a look at the namespaces currently configured:
-`kubectl get namespaces`{{execute}}
+We were told there is an issue on the cluster but no further details were provided. So first let's the health of our cluster.
+`kubectl get nodes`{{execute HOST1}}
+
+Both the "controlplane" and "node01" should be reporting as READY.
+
+Take a look at the namespaces currently configured:
+`kubectl get namespaces`{{execute HOST1}}
 
 You can ignore the "default" and "kube-*" namespaces for now.
 
