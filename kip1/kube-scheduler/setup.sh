@@ -61,4 +61,5 @@ spec:
         memory: "4Gi"
 EOF
 kubectl apply -f setup.yaml
-
+# File to indicate the to the foreground script that user can proceed.
+echo "done" >> /opt/.backgroundfinished
