@@ -33,6 +33,7 @@ spec:
     - containerPort: 8080
 EOF
 kubectl apply -f setup.yaml
+touch /root/myservice.yaml
 
 
 
