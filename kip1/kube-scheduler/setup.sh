@@ -1,8 +1,8 @@
 #!/bin/bash
 
-while [ `docker ps | wc -l` -eq 1 ]
+until kubectl get nodes
 do
-  sleep 1
+  sleep 2
 done
 
 cat <<EOF > setup.yaml
