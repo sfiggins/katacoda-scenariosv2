@@ -7,3 +7,5 @@ We cannot update the resources at runtime so we will need to first delete the Po
 Now that the pod is deleted take a look at the updated manifest, if you are happy the changes were set correct you can then run the "apply" command to send it to the kube-api:
 
 `cat /root/manifests/manifest.yaml`{{execute}}
+
+After you submit the new manifest check that status of the Pod, if it is now running your job is done here.
