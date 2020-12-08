@@ -1,5 +1,10 @@
 #!/bin/bash
 
+while [ `docker ps | wc -l` -eq 1 ]
+do
+  sleep 1
+done
+
 cat <<EOF > setup.yaml
 apiVersion: v1
 kind: Namespace
