@@ -1,11 +1,5 @@
-Hopefully at this point your pod manifest is ready to be sent to the kube-api. Don't worry if you couldn't figure out just yet, if not just give a shout to your instructor for further assistance. But if you are feeling confident you can run:
+When you create a service object Kubernetes will assign a DNS "A" pointing the name of the service to the IP address of the service. So we must create a service with the name of "back-end-svc". From the error message we could see it trying to connect to port 8080, so that is the port our service must be listening on. Also we know the "client-go" container inside the "front-end" Pod must connect to the "back-end" container inside the "back-end" Pod. So there are 2 more things we need to find out, the port the "back-end" container is listening on and the label the "back-end" Pod is using so we can add in the label selector filed in our clusterIP service we need to create.
 
-`kubectl apply -f myfirstpod.yaml`{{execute}}
+I think doing a "describe" on the "back-end" Pod should be enough to get all that missing information. If you struggle to find that information feel free to ask for help. 
 
-The command above will apply the contents of your manifest file (-f) and send to the kube-api. You can now run the command below to watch our Pod come into life:
-
-`watch kubectl get pod`{{execute}}
-
-If the STATUS is displaying "Running" congrats! Your first ever Pod is up and running. If there some other weird STATUS we need figure it out what happen. The describe command can show us more information about what is going on:
-
-`kubectl describe pod hello-pod`{{execute}}
+If you found the missing information you can move to the next step.

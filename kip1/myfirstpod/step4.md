@@ -1,6 +1,8 @@
-Can you tell in which namespace the POD is running?
+>>Q1: Can you tell in which namespace the Pod is running? <<
+[*] default
+[ ] kube-system
 
-When you pass a command to kubectl but does not specify any namespace ( with the -n option) the output will show whatever resource you request from the "default" namespace.
+When you pass a command to kubectl but does not specify any namespace ( with the -n option) the output will show whatever resource you request from the "default" namespace. The "kube-system" namespace is used by the internal components of Kubernetes.
 
 I am really sorry but I forgot to say we were supposed to create our first pod in the namespace called 'development'. You can check to see if the namespace already exist on Kubernetes:
 
@@ -14,6 +16,8 @@ kind: Namespace
 metadata:
   name: development
 EOF`{{execute}}
+
+The command above created our namespace manifest file under "/root/manifests/dev-ns.yaml".
 
 Now that you know about the "apply" option. Try running yourself to apply the namespace manifest to Kubernetes.
 

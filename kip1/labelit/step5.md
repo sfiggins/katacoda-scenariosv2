@@ -1,11 +1,10 @@
-We can't simply edit the Pod at runtime to place in the new namespace, so we will need to first delete the pod, edit our pod.yaml file with theextra field in the metadata section to add specify the namespace we want the Pod to be deploy.
+If everything was done correctly you should see the IP address of the "back-end" Pod listed on the Endpoint field of your newly created service.
 
-`kubectl delete pod hello-pod`{{execute}}
+First let's find out the IP address of our Pod:
 
-The command above might hang for a few seconds, if we goes longer than that you can press "crtl + C".
+`kubectl get pod back-end -o wide`{{execute}}
 
-Now edit the "pod.yaml", once done run the "kubectl apply" command to push the new manifest to the kube-api once again.
+Now let's if we can see the Pod in our service:
 
-If the command below show the Pod in the "running" STATUS congrats! We got our new Pod in the right namespace:
+`kubectl describe service back-end-svc`{{execute}}
 
-`kubectl -n development get pods`{{execute}}

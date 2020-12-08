@@ -1,1 +1,1 @@
-Welcome back! Things are not looking nice at the moment. Two applications have been deployed in our Kubernetes cluster something is either wrong or missing. Let's find out what it is.
+Welcome back! Things are not looking good at the moment. Two applications have been deployed in our Kubernetes cluster but something is either wrong or missing. Let's find out what it is.

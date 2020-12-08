@@ -32,3 +32,5 @@ spec:
   containers:
   - image: raftx/sample-web:v4
     name: back-end
+    ports:
+    - containerPort: 8080
