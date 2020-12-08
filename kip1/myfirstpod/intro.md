@@ -1,2 +1,1 @@
-Welcome to your first workshop! We have just learned about Pods and Namespaces so it is time for us to practice. Don't worry, we will start very simple and build up from here as we move along throughout the day.
-ß
+Welcome to your first workshop! We have just learned about Pods and Namespaces so it is time for us to practice our newfound knowledge. Don't worry, we will start very simple and build up from here as we move along throughout the day.
