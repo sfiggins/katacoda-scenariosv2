@@ -1,1 +1,1 @@
-Well done. You are starting to get a hang of time. Turns out Kubernetes is not as complicated as you might thought.
+Well done. You are starting to get a hang of this. It turns out Kubernetes is not as complicated as you might have thought.
