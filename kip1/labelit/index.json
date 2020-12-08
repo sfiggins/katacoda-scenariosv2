@@ -32,7 +32,8 @@
     ],
     "intro": {
       "text": "intro.md",
-      "background": "setup.sh"
+      "background": "setup.sh",
+      "code": "launch.sh"
     },
     "finish": {
       "text": "finish.md"
