@@ -39,7 +39,8 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "terminali-editor",
+    "uieditorpath": "/root"
   },
   "backend": {
     "imageid": "kubernetes-cluster-running"
