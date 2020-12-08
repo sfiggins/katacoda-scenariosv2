@@ -39,7 +39,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminali-editor",
+    "uilayout": "terminal-editor",
     "uieditorpath": "/root"
   },
   "backend": {
