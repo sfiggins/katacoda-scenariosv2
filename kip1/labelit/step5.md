@@ -8,3 +8,4 @@ Now let's if we can see the Pod in our service in the "Endpoints" field:
 
 `kubectl describe service back-end-svc`{{execute}}
 
+If the Pod IP is there well done. Seems like you setup everything correctly. Move to the next step.

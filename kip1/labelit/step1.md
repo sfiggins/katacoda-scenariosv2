@@ -5,4 +5,4 @@ There are 2 applications running in the default namespace. Use "kubectl" to list
 [*] CrashLoopBackOff
 [ ] Running
 [ ] Completed
-[ ] Error
+[ ] Unknown
