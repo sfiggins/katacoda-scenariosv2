@@ -4,7 +4,7 @@ First let's find out the IP address of our Pod:
 
 `kubectl get pod back-end -o wide`{{execute}}
 
-Now let's if we can see the Pod in our service:
+Now let's if we can see the Pod in our service in the "Endpoints" field:
 
 `kubectl describe service back-end-svc`{{execute}}
 
