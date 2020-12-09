@@ -1,0 +1,1 @@
+Nice one. One more scenario under your belt. Let's go back to learn more stuff about Kubernetes.
