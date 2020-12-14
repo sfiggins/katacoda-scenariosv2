@@ -1,0 +1,1 @@
+Welcome to the ConfigMap and Secret challenge. We talked to the talk, but now it is time to walk the walk.

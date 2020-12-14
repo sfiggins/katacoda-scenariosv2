@@ -1,0 +1,33 @@
+{
+  "title": "Kubernetes in Practice Day 1",
+  "description": "Introduction to Kubernetes concepts",
+  "private": "true",
+  "icon": "fa-katacoda",
+  "courses": [
+    {
+      "course_id": "microservice",
+      "title": "Exploring a microservice solution",
+      "description": "an example of a microservice solution"
+    },
+    {
+      "course_id": "myfirstpod",
+      "title": "Pod Up",
+      "description": "Learn about Pods and Namespaces"
+    },
+    {
+      "course_id": "kube-scheduler",
+      "title": "kube-scheduler",
+      "description": "Troubleshooting scheduling issues"
+    },
+    {
+      "course_id": "labelit",
+      "title": "Label it",
+      "description": "Practing labels and services"
+    },
+    {
+      "course_id": "configmap",
+      "title": "Environmetal Friendly",
+      "description": "Practicing Secret and ConfigMap"
+    }
+  ]
+}

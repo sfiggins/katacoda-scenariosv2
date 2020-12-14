@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-pod
+  labels:
+    app: web
+spec:
+  volumes:
+  - name: varfile
+    configMap:
+      name: filemap
+  containers:
+  - image: raftx/sample-web:configmap
+    name: sample-web
+    imagePullPolicy: Always
+    env:
+    - name: MYVAR
+      valueFrom:
+        configMapKeyRef:
+          key: MYVAR
+          name: varenv
+    - name: MYSECRET
+      valueFrom:
+        secretKeyRef:
+          key: secretenv
+          name: mysecret
+    volumeMounts:
+    - name: varfile
+      mountPath: /data/
