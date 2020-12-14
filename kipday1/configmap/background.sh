@@ -13,7 +13,7 @@ metadata:
     app: config
 spec:
   containers:
-  - image: raftx/sample-web:config
+  - image: raftx/sample-web:configmap
     name: prod-app
 
 ---
