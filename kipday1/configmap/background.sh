@@ -14,7 +14,7 @@ metadata:
 spec:
   containers:
   - image: raftx/sample-web:configmap
-    name: challenge-app
+    name: prod-app
 
 ---
 
