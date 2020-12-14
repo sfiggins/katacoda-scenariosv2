@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-web
+  labels:
+    app: config
+spec:
+  containers:
+  - image: raftx/sample-web:configmap
+    name: challenge-app

@@ -36,7 +36,9 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+    "showdashboard": true,
+    "dashboards": [{"name": "sample-web", "href": "https://[[HOST_SUBDOMAIN]]-30003-[[KATACODA_HOST]].environments.katacoda.com"}]
   },
   "backend": {
     "imageid": "kubernetes-cluster-running"
