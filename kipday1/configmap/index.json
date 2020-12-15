@@ -4,13 +4,6 @@
   "difficulty": "Beginner",
   "time": "20",
   "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "*",
-          "target": "/root/manifests/"}
-        ]
-    },
     "steps": [
       {
         "title": "Step 1",
@@ -44,7 +37,6 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uieditorpath": "/root/manifests",
     "showdashboard": true,
     "dashboards": [{"name": "sample-web", "href": "https://[[HOST_SUBDOMAIN]]-30003-[[KATACODA_HOST]].environments.katacoda.com"}]
   },
