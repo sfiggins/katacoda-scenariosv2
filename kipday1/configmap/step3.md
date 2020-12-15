@@ -25,11 +25,11 @@ env:
 
 Now we are done with .spec.containers.env and we need to find out the arguments for "valueFrom":
 
-```kubectl explain pod.spec.containers.env.valueFrom`{{execute}}
+`kubectl explain pod.spec.containers.env.valueFrom`{{execute}}
 
 Seems like the option we need is "secretKeyRef" which takes in Object type. Lets have a look and what it needs:
 
-```kubectl explain pod.spec.containers.env.valueFrom.secretKeyRef`{{execute}}
+`kubectl explain pod.spec.containers.env.valueFrom.secretKeyRef`{{execute}}
 
 So here we will need to fill out the "key" (secretenv) and the name (mysecret) so we will end up with something like this:
 
@@ -42,14 +42,12 @@ env:
       name: mysecret
 ```
 
-Now you can copy the block above and paste into our pod manifest "challenge-app.yaml" using the editor above. Pay careful attention with the indentation, the "env" block show be in line with the options "image" and "name"  since they are all part of a list of objects that belong to "containers".
+Pay careful attention with the indentation, the "env" block should be in line with the options "image" and "name"  since they are all part of a list of objects that belong to "containers".
 
 
-If you paste every correctly now it is time to apply our manifest and have a look:
+If we added every correctly we should be able to apply our manifest and have a look:
 
-```
 `kubectl apply -f /root/manifests/challenge-app.yaml`{{execute}}
-```
 
 Now click on the "sample-web" tab to load the application. If we are on the right track we should see this:
 
