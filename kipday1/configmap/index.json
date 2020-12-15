@@ -7,8 +7,13 @@
     "assets": {
       "host01": [
         {
-          "file": "*",
-          "target": "/root/manifests/"}
+          "file": "challenge-answer.yaml",
+          "target": "/var/answers/"
+        },
+        {
+          "file": "challenge-app.yaml",
+          "target": "/root/manifests/"
+        }
         ]
     },
     "steps": [

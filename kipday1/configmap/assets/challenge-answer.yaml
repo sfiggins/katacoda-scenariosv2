@@ -8,20 +8,19 @@ spec:
   volumes:
   - name: varfile
     configMap:
-      name: varenv
+      name: myvars
       items:
       - key: var.txt
         path: var.txt
   containers:
   - image: raftx/sample-web:configmap
     name: sample-web
-    imagePullPolicy: Always
     env:
     - name: MYVAR
       valueFrom:
         configMapKeyRef:
           key: MYVAR
-          name: varenv
+          name: myvars
     - name: MYSECRET
       valueFrom:
         secretKeyRef:
