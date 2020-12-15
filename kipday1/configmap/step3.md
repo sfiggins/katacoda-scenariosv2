@@ -1,6 +1,6 @@
 What we need to do is set an environment variable in the pod manifest and configure it to get the value from our newly created secret. 
 
-But before we start writing our manifest we need to delete the current Pod as adding Environment variables in the  Pod specification is not possible during runtime, so we will have to delete the port first, we have the manifest cluster already so just run:
+But before we start writing our manifest we need to delete the current Pod as adding Environment variables in the  Pod specification is not possible during runtime, so we will have to delete the Pod first, we have the manifest in the cluster already so just run:
 
 `kubectl delete -f /root/manifests/challenge-app.yaml`{{execute}}
 
@@ -8,13 +8,13 @@ Now let's get some help from "kubectl explain". What we need to look for is the 
 
 `kubectl explain pod.spec.containers.env`{{execute}}
 
-The documentation says "env" takes a list of Object (<[]Object>) so let's start filling out our manifests. Just under "name: challenge-app" at the same indentation level add:
+The documentation says "env" takes a list of Object (<[]Object>) so let's start filling out our manifests (challenge-app.yaml). Just under "name: challenge-app" at the same indentation level add:
 
 ```html
 env:
 ```
 
-The option we need for "env" will be "name" (can't do it without it) and "valueFrom", since we are not specifying the variable directly on the Pod but rather grabbing from somewhere else, our secret object and remember, the application is hardcoded to look for the variable "MYSECRET" so that is what we have to name it:
+The options we need for "env" will be "name" (can't do it without it) and "valueFrom", since we are not specifying the variable directly on the Pod but rather grabbing from somewhere else, our secret object and remember, the application is hardcoded to look for the variable "MYSECRET" so that is what we have to name it:
 
 
 ```html
@@ -45,7 +45,7 @@ env:
 Pay careful attention with the indentation, the "env" block should be in line with the options "image" and "name"  since they are all part of a list of objects that belong to "containers".
 
 
-If we added every correctly we should be able to apply our manifest, if there is any type the kube-api will most likely complain and give a clue as to what we did wrong:
+If we added every correctly we should be able to apply our manifest, if there is any typo the kube-api will most likely complain and give a clue as to what we did wrong:
 
 `kubectl apply -f /root/manifests/challenge-app.yaml`{{execute}}
 
@@ -53,7 +53,7 @@ If the "apply" did not return any errors run a "kubectl get pods" to see if the 
 
 Hmm...looks like something went wrong. Any ideas why? Try running a describe to get more info.
 
-Remember on step 2 when we "create" the secret? We had just created the manifests we had not applied, so let's do it now:
+Remember on step 2 when we "created" the secret? We had just created the manifest, we had not applied, so let's do it now:
 
 `kubectl apply -f manifests/mysecret.yaml`{{execute}}
 

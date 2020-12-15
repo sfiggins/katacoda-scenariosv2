@@ -1,6 +1,6 @@
-You are doing really. This I will let you create the configMap object by yourself.
+You are doing really well. This time I will let you create the configMap object yourself.
 
-Try using the same approach we did with "kubecl create" but instead of creating a secret you create a configmap. I will let you figure out the command by yourself. But here are some key things:
+Try using the same approach we did with "kubectl create" but instead of creating a "secret you create a "configmap". I will let you figure out the command by yourself. But here are some key things:
 
 * Name your configMap "myvars"
 * Name the key for "IAmJustAnEnv" as "MYVAR".
@@ -9,7 +9,7 @@ Try using the same approach we did with "kubecl create" but instead of creating 
 
 So your configMap should contain 2 keys, and remember, the option "--from-literal" can be used multiple times in the same "create" command.
 
-Take your time to figure the right command, if you get stuck feel free to ask for help.
+Take your time to figure the right command, if you get stuck feel free to ask for help. You might want to go back to step 2 to have a look at the "kubectl create" command, it should be pretty similar.
 
 If configMap was created correctly the contents of your manifest should look like this:
 
