@@ -45,9 +45,19 @@ env:
 Pay careful attention with the indentation, the "env" block should be in line with the options "image" and "name"  since they are all part of a list of objects that belong to "containers".
 
 
-If we added every correctly we should be able to apply our manifest and have a look:
+If we added every correctly we should be able to apply our manifest, if there is any type the kube-api will most likely complain and give a clue as to what we did wrong:
 
 `kubectl apply -f /root/manifests/challenge-app.yaml`{{execute}}
+
+If the "apply" did not return any errors run a "kubectl get pods" to see if the pod is "Running" before we have a look.
+
+Hmm...looks like something went wrong. Any ideas why? Try running a describe to get more info.
+
+Remember on step 2 when we "create" the secret? We had just created the manifests we had not applied, so let's do it now:
+
+`kubectl apply -f manifests/mysecret.yaml`{{execute}}
+
+After a few seconds the kubelet will try to start the container again and hopefully it will succeed since the secret exist now.
 
 Now click on the "sample-web" tab to load the application. If we are on the right track we should see this:
 
@@ -58,3 +68,5 @@ Now click on the "sample-web" tab to load the application. If we are on the righ
 
 3-) My File Variable: 
 ```
+
+If the page matches the above well done!! Move to the next step, otherwise carry on troubleshooting. If you get stuck feel free to give a shout to instructor or the rest of the group.
