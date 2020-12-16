@@ -11,7 +11,7 @@ do
   sleep 1
 done
 
-kubectl apply -f /root/manifests/color-deployment.yaml
+kubectl apply -f /root/manifests/color-deployment.yaml --record
 
 sleep 2
 # Purposefully scaling the deployment to cause a configuration drift.
