@@ -14,7 +14,7 @@ We can take a look at the history of our deployment to see if we can track down 
 
 `kubectl rollout history deployment color-deployment`{{ execute HOST1 }}
 
-We can see only one REVISION and the CHANGE-CAUSE is the command that we used to deploy the application. Every time you take an action on the deployment with the flag "--record"  the CHANGE-CAUSE is updated with the command used. So it looks like someone scale the deployment manually without the "--record" flag.
+We can see only one REVISION and the CHANGE-CAUSE is the command that we used to deploy the application. Every time you take an action on the deployment with the flag "--record"  the CHANGE-CAUSE is updated with the command used. So it looks like someone scaled the deployment manually without the "--record" flag.
 
 This is not ideal since it is very hard to track who and why the change was made and we start going into a configuration drift comparing with our source control repo.
 

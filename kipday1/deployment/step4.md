@@ -1,4 +1,4 @@
-The development team worked really hard to have that new feature implemented and make some improvement to the startup time the application, a new version with that tag "yellow" has been created and push the Container Registry, however we should still implement the Readiness Probe in our deployment manifest. We decided that a simple TCP check against port 8080 should suffice for now. Let's refer to "kubectl explain" to see what options we have for the readiness probe:
+The development team worked really hard to have that new feature implemented and make some improvement to the startup time the application, a new version with that tag "yellow" has been created and pushed the Container Registry, however we should still implement the Readiness Probe in our deployment manifest. We decided that a simple TCP check against port 8080 should suffice for now. Let's refer to "kubectl explain" to see what options we have for the readiness probe:
 
 `kubectl explain pod.spec.containers.readinessProbe`{{ execute HOST1 }}
 

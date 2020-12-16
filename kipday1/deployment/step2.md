@@ -13,10 +13,10 @@ We can confirm our Deployment created a new ReplicaSet:
 
 Try doing a "kubectl describe" is any of the pods from our Deployment and look for the Container Image used by the Pod.
 
-The tag says "green" last time we check it was running the "blue" tag.
+The tag says "green" but last time we check it was running the "blue" tag.
 
 The whole application is down at the moment so let's try reverting our deployment to the blue tag since we know that was working, at least before we left for day.
 
 `kubectl rollout undo deployment color-deployment`{{ execute HOST1 }}
 
-Wait a few seconds, our Loop start returning a successful response to all request when the rollout is finally complete. Once that is the case move to the next steps. Otherwise carry on troubleshooting and feel free to ask to help.
+Wait a few seconds, our Loop should start returning a successful response to all request when the rollout is finally complete. Once that is the case move to the next steps. Otherwise carry on troubleshooting and feel free to ask to help.
