@@ -1,0 +1,1 @@
+Well done! We managed to bring the application to a functioning state in no time. This exercise highlights the importance of documenting every change to the application and how Kubernetes primitives can help us to prevent outages. 

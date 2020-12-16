@@ -19,4 +19,6 @@ The whole application is down at the moment so let's try reverting our deploymen
 
 `kubectl rollout undo deployment color-deployment`{{ execute HOST1 }}
 
+The command above tells our Deployment object to revert the changes that cause the new replicaSet created, so basically returning to the original replicaSet with the container image with the blue tag.
+
 Wait a few seconds, our Loop should start returning a successful response to all request when the rollout is finally complete. Once that is the case move to the next steps. Otherwise carry on troubleshooting and feel free to ask to help.

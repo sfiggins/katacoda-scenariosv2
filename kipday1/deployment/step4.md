@@ -24,3 +24,17 @@ readinessProbe:
 The changes already has been made that checked to our source control. You can check the latest version here:
 
 `cat /root/manifests/color-deployment_v2.yaml`{{ execute HOST1 }}
+
+We will be running 20 replicas as before but this time with the "yellow" tag and a readiness probe so Kubernetes knows when the application is ready to accept traffic based on our TCP check on port 8080.
+
+`kubectl apply -f /root/manifests/color-deployment_v2.yaml --record`{{ execute HOST1 }}
+
+We can check the progress of the rolling update with the following command:
+
+`kubectl rollout status deployment color-deployment`{{ execute HOST1 }}
+
+If you still have that Loop going on in the bottom terminal you will see that slowly the output of our curl will start showing up "Welcome to the YELLOW app" and eventually the BLUE version will be gone.
+
+And our "CHANGE-CAUSE" is properly recorded in the history:
+
+`kubectl rollout history deployment color-deployment`{{ execute HOST1 }}
