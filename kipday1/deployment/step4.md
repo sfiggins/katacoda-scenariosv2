@@ -29,7 +29,7 @@ We will be running 20 replicas as before but this time with the "yellow" tag and
 
 `kubectl apply -f /root/manifests/color-deployment_v2.yaml --record`{{ execute HOST1 }}
 
-We can check the progress of the rolling update with the following command:
+We can check the progress of the rolling update with the following command, it should take roughly 30 seconds to see something happening:
 
 `kubectl rollout status deployment color-deployment`{{ execute HOST1 }}
 
@@ -38,3 +38,5 @@ If you still have that Loop going on in the bottom terminal you will see that sl
 And our "CHANGE-CAUSE" is properly recorded in the history:
 
 `kubectl rollout history deployment color-deployment`{{ execute HOST1 }}
+
+Our job is done here. You earned yourself a cup coffee!
