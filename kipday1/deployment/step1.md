@@ -16,11 +16,15 @@ We can take a look at the history of our deployment to see if we can track down 
 
 We can see only one REVISION and the CHANGE-CAUSE is the command that we used to deploy the application. Every time you take an action on the deployment with the flag "--record"  the CHANGE-CAUSE is updated with the command used. So it looks like someone scaled the deployment manually without the "--record" flag.
 
-This is not ideal since it is very hard to track who and why the change was made and we start going into a configuration drift comparing with our source control repo.
+This is not ideal since it is very hard to track who and why the change was made and we start going into a configuration drift between what is actually running in the cluster and what has been declared on our source control repo.
 
 Just for the of demonstration let's scale up the application to 20 replicas, don't worry, our cluster can handle:
 
 `kubectl scale --replicas=20 deployment color-deployment --record`{{ execute HOST1 }}
+
+You can track the status of the scaling even the "status" option:
+
+`kubectl rollout status deployment color-deployment`{{ execute HOST1 }}
 
 Since we used the "--record" flag we can see our command was saved on the history:
 
