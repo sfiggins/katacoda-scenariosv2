@@ -28,6 +28,11 @@
       "course_id": "configmap",
       "title": "Environmentally Friendly",
       "description": "Practicing Secret and ConfigMap"
+    },
+    {
+      "course_id": "deployment",
+      "title": "Rolling in the deep",
+      "description": "Performing a rolling update."
     }
   ]
 }
