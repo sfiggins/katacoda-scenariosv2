@@ -14,4 +14,4 @@ kubectl apply -f /root/manifests/deploy1.yaml
 
 sleep 2
 
-kubectl scale --replica 5 deployment color-deployment 
+kubectl scale --replicas=5 deployment color-deployment

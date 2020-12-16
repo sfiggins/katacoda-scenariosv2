@@ -1,0 +1,1 @@
+`watch kubectl get pod`{{execute HOST1}}

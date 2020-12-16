@@ -1,4 +1,4 @@
-We have an simple web-server written in Go running in our Cluster. I have already create a nodePort service listening on port 30003. You can check it out by clicking on the tab called "sample-web".
+We have an simple web-server written in Go running in our Cluster. I have already created a nodePort service listening on port 30003. You can check it out by clicking on the tab called "sample-web".
 
 Your goal is to make the home page of the application display the following:
 
