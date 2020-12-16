@@ -1,0 +1,1 @@
+Keep an eye on your bottom terminal. The loop we started before is checking the application every second and we should be getting a successful response every time otherwise that is definitely something wrong.
