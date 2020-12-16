@@ -19,7 +19,8 @@
       },
       {
         "title": "Step 2",
-        "text": "step2.md"
+        "text": "step2.md",
+        "courseData": "break.sh"
       },
       {
         "title": "Step 3",
