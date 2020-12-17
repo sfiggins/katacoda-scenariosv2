@@ -15,7 +15,6 @@
     "steps": [
       {
         "title": "Step 1",
-        "answer": "step1-answer.md",
         "text": "step1.md"
       },
       {
