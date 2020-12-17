@@ -10,6 +10,11 @@
       "description": "an example of a microservice solution"
     },
     {
+      "course_id": "test-microservice",
+      "title": "Exploring a microservice solution",
+      "description": "an example of a microservice solution"
+    },
+    {
       "course_id": "myfirstpod",
       "title": "Pod Up",
       "description": "Learn about Pods and Namespaces"
