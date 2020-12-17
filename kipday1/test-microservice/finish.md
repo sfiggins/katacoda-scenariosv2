@@ -1,0 +1,1 @@
+Well done!! You made it to the end of day 1! We are halfway there just one more day to do. I hope you enjoy your first experience with Kubernetes. See you tomorrow!
