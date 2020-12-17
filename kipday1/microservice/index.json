@@ -36,7 +36,9 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uieditorpath": "/root/manifests"
+    "uieditorpath": "/root/manifests",
+    "showdashboard": true,
+    "dashboards": [{"name": "sample-web", "href": "https://[[HOST_SUBDOMAIN]]-30005-[[KATACODA_HOST]].environments.katacoda.com"}]
   },
   "backend": {
     "imageid": "kubernetes-cluster-running"
