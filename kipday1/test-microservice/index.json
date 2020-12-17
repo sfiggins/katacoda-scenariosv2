@@ -38,6 +38,6 @@
     "dashboards": [{"name": "Online Boutique", "href": "https://[[HOST_SUBDOMAIN]]-30005-[[KATACODA_HOST]].environments.katacoda.com"}]
   },
   "backend": {
-    "imageid": "kubernetes-cluster-running"
+    "imageid": "raf-kubernetes-cluster-1-18"
   }
 }
