@@ -36,4 +36,4 @@ Leave command below running, it will be useful in a second, you should be seeing
 
 `while true; do curl 127.0.0.1:30001; sleep 1; done`{{ execute HOST2 }}
 
-You are sound asleep when you get a phone call. Looks like our monitoring system is picking up some errors coming from our BLUE app. Move on to the next step to start the investigation.
+You are sound asleep when you get a phone call in the middle of the night. Looks like our monitoring system is picking up some errors coming from our BLUE app. Move on to the next step to start the investigation.

@@ -1,1 +1,3 @@
+Deployment and ReplicaSet are powerful Kubernetes abstractions that will do most of the works running your stateless application. If you want to keep ahead of the game you need to innovate, innovation means change and change means "things possibly breaking in the process". So you need to be sure that when you take a step forward you can always take a step back just in case and this is one of the main reasons why the Deploying object was created in Kubernetes.
+
 Dealing with production workloads is not an easy task. Especially when you are woken up in the middle of the night because of an outage. Get ready as we are going to work under pressure here.

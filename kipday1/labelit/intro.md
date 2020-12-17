@@ -1,1 +1,3 @@
-Welcome back! Things are not looking good at the moment. Two applications have been deployed in our Kubernetes cluster but something is either wrong or missing. Let's find out what it is.
+A typical Kubernetes cluster will have hundreds and even thousands of different API objects being created/deleted/updated at any given time. Every API object can have multiple labels assigned to them, and that is how Kubernetes (and your team) can keep track of each API object and their relationship with each other. A simple concept yet a very powerful one.
+
+Things are not looking good at the moment. Two applications have been deployed in our Kubernetes cluster but something is either wrong or missing. Let's find out what it is.
