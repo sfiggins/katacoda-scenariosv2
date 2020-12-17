@@ -5,7 +5,8 @@ do
 done
 
 # Loop to wait for Katacoda to upload the assets files
-while [ `ls /root/manifests/ | wc -l` -ne 12 ]
+DIR=/root/manifests/
+while [ ! -d "$FILE" ]
 do
   sleep 2
 done
