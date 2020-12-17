@@ -7,7 +7,7 @@
     "assets": {
       "host01": [
         {
-          "file": "challenge-answer.yaml",
+          "file": "*-answer.yaml",
           "target": "/var/answers/"
         },
         {
