@@ -38,7 +38,7 @@
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/manifests",
     "showdashboard": true,
-    "dashboards": [{"name": "sample-web", "href": "https://[[HOST_SUBDOMAIN]]-30005-[[KATACODA_HOST]].environments.katacoda.com"}]
+    "dashboards": [{"name": "Online Boutique", "href": "https://[[HOST_SUBDOMAIN]]-30005-[[KATACODA_HOST]].environments.katacoda.com"}]
   },
   "backend": {
     "imageid": "kubernetes-cluster-running"
