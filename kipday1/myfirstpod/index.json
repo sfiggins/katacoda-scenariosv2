@@ -42,6 +42,6 @@
     "uieditorpath": "/root/manifests"
   },
   "backend": {
-    "imageid": "srftestorg-kubernetes-cluster-1-18"
+    "imageid": "srftestorg-kubernetes-cluster-1-18-running"
   }
 }
