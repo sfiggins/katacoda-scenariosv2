@@ -1,6 +1,7 @@
 {
   "title": "Kubernetes in Practice Day 1",
   "description": "Introduction to Kubernetes concepts",
+  "private": "true",
   "icon": "fa-katacoda",
   "courses": [
     {
